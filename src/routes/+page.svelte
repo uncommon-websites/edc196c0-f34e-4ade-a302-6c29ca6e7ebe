@@ -6,16 +6,50 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+<CustomerCardHero
+	title="Streamline your farm-to-fork commerce"
+	subtitle="Join thousands of farmers and food hubs who save 20+ hours weekly while growing their sales by 23% annually with our unified platform."
+	centered={true}
+	customers={[
+		{
+			name: "Sarah Chen",
+			position: "Greenhouse Farm Owner",
+			imageSrc: "/generated/image-a-professional-female-farmer-standing-in.webp"
+		},
+		{
+			name: "Marcus Rodriguez",
+			position: "Food Hub Manager",
+			imageSrc: "/generated/image-a-male-food-hub-manager-in-a-spacious-wa.webp"
+		},
+		{
+			name: "Elena Thompson",
+			position: "Restaurant Owner",
+			imageSrc: "/generated/image-a-female-restaurant-owner-in-a-bustling-.webp"
+		},
+		{
+			name: "David Miller",
+			position: "Organic Farm Owner",
+			imageSrc: "/generated/image-a-male-organic-farm-owner-standing-proud.webp"
+		},
+		{
+			name: "Jennifer Park",
+			position: "Grocery Store Manager",
+			imageSrc: "/generated/image-a-female-grocery-store-manager-standing-.webp"
+		}
+	]}
 />
-<LogoScroller label="" generating />
+<LogoScroller 
+	label="Trusted by industry leaders"
+	logoUrls={[
+		'https://cdn.brandfetch.io/wholefoodsmarket.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/freshmarket.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/sprouts.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/hy-vee.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
